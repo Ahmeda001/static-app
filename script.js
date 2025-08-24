@@ -23,4 +23,4 @@ async function sendRequest() {
 // run immediately
 sendRequest();
 // then every 24 hours (24 * 60 * 60 * 1000 ms)
-setInterval(sendRequest, 24 * 60 * 60 * 1000);
+setInterval(sendRequest,60 * 60 * 1000);
