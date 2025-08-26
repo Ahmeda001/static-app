@@ -9,6 +9,10 @@ jobs:
   ping-api:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: checkout your repo to access dummy.jpg
+      - uses: actions/checkout@v3
+
+      # Step 2: send the dummy image
       - name: Send dummy image to API
         run: |
           curl -X POST "https://oldahmed-image-new.hf.space/predict" \
