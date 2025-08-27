@@ -1,10 +1,9 @@
-name: Keep HF Space Alive
+name: BERT Urdu Keep Alive
 
 on:
   schedule:
     - cron: '*/5 * * * *' # every 5 minutes
   workflow_dispatch:
-
 
 jobs:
   ping:
@@ -12,6 +11,6 @@ jobs:
     steps:
       - name: Ping HF Space
         run: |
-          curl -X POST "https://oldahmed-docker-host.hf.space/predict" \
+          curl -X POST "https://oldahmed-bert-urdu.hf.space/predict" \
           -H "Content-Type: application/json" \
           -d '{"text": "keep alive"}'
