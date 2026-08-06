@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: Ping HF Space
         run: |
-          curl -X POST "https://huggingface.co/spaces/oldAhmed/Docker_host" \
+          curl -X POST "https://oldahmed-docker-host.hf.space/predict" \
           -H "Content-Type: application/json" \
           -d '{"text": "keep alive"}'
