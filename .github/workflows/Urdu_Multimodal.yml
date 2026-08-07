@@ -2,7 +2,7 @@ name: Urdu Multimodal Prediction
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # every 5 minutes
+    - cron: '*/15 * * * *' # every 5 minutes
   workflow_dispatch: # allow manual trigger
 
 jobs:
